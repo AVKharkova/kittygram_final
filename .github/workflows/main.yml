@@ -171,3 +171,4 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: Роботы закончили работы, деплой Kittygram успешно выполнен!
+          Коммит: ${{ github.sha }}
