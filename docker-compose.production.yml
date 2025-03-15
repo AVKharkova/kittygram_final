@@ -16,9 +16,8 @@ services:
     image: netkann/kittygram_backend:latest
     env_file: .env
     volumes:
-      - static_volume:/backend_static
+      - static_volume:/collected_static
       - media_volume:/app/media
-      - ./collected_static:/app/collected_static
     depends_on:
       - db
     command: >
